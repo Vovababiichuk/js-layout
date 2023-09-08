@@ -1,7 +1,35 @@
-@use '../../style' as s;
+body {
+   background: #121212;
+}
 
-main {
-	background: s.color(dark);
-	color: s.color(light);
-	padding: s.space(4);
-} 
+.container {
+   width: 100%;
+   margin: 0 auto;
+   max-width: 1000px;
+   padding: 0 20px;
+}
+
+.page {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 130px;
+   padding-top: 200px;
+
+   a {
+      color: #fff;
+      text-decoration: none;
+      background-color: red;
+      padding: 16px 34px;
+      font-size: 42px;
+      border-radius: 26px;
+      box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+         box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
+      }
+   }
+}

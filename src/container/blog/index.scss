@@ -1,0 +1,120 @@
+@use '../../style/layout' as s;
+
+body {
+   background: #2f2f2f;
+   padding: 40px 0;
+}
+
+.page {
+   width: 100%;
+   margin: 0 auto;
+   max-width: 407px;
+   padding: 0 16px;
+   background-color: #fff;
+   border-radius: 20px;
+}
+
+.header {
+   display: flex;
+   flex-direction: column;
+}
+
+.header-top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 14px 0 12px 0;
+
+   .time {
+      background-image: url(/img/iphone/time.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 54px;
+      height: 20px;
+      display: inline-block;
+   }
+
+   .status {
+      background-image: url(/img/iphone/status.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 67px;
+      height: 12px;
+      display: inline-block;
+   }
+}
+
+.header-nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 12px 0 20px 0;
+}
+
+.post-cards {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   padding-bottom: 150px;
+}
+
+.post-card {
+   background-color: #f7f7f7;
+   padding: 12px;
+   border-radius: 10px;
+
+   .post-card__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+
+      .badges {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+
+         .badge__important {
+            color: #f46f17;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1;
+
+            border-radius: 100px;
+            background: rgba(244, 111, 23, 0.1);
+            padding: 8px 12px;
+         }
+
+         .badge__new {
+            color: #ef5da8;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1;
+
+            border-radius: 100px;
+            background: rgba(239, 93, 168, 0.1);
+            padding: 8px 12px;
+         }
+      }
+
+      .date {
+         background-image: url(/img/iphone/date.svg);
+         background-repeat: no-repeat;
+         background-position: center;
+         width: 34px;
+         height: 15px;
+         display: inline-block;
+      }
+   }
+
+   .post-card__text {
+      color: #363636;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+   }
+
+   .color-text {
+      color: #888;
+   }
+}

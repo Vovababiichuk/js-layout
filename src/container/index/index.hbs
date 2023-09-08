@@ -1,13 +1,8 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
-
 <main>
-	{{>heading title="Index" info=data.test}}
+    <div class="container">
+        <div class="page">
+            <a class="page__link1" href="/blog">Blog</a>
+            <a class="page__link2" href="/community">Community</a>
+        </div>
+    </div>
 </main>
-
-{{!
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
